@@ -1,0 +1,185 @@
+<!DOCTYPE html> <!--voor de validator-->
+
+<html lang="en">
+<head>
+<meta charset="utf-8" /> <!--voor de karakterset, internationale standaard-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css" media="screen">
+<script src="modernizr.min.js"></script> <!--modernizr-->
+<title>Aanmelden | CMD Amsterdam</title>
+</head>
+
+<body>
+	<header>
+		<h1>Project Aanmelden</h1>
+	</header>
+
+		<nav id="globalnav">
+			<!-- Menu -->
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="aanmelden.html">Projecten</a></li>
+				<li><a href="index.html">Opleidingsinformatie</a></li>
+				<li><a href="#">Docenten</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+
+		<nav id="subnav">
+			<!-- Submenu Projecten pagina -->
+			<ul>
+				<li><a href="#">Projecten</a></li>
+				<li><a href="#">Slideshow</a></li>
+				<li><a href="#">Aanmelden</a></li>
+				<li><a href="#">Zoeken</a></li>
+			</ul>
+		</nav>
+
+	<form action="#" method="get"> 
+
+		<fieldset>
+			<legend>Contactgegevens:</legend>
+
+			<label for="naam">Naam</label>
+			<input type="text" id="naam" required/>
+
+			<label for="studentennummer">Studentennummer</label>
+			<input type="number" id="studentennummer" required/>
+
+			<label for="telefoonnummer">Telefoonnummer</label>
+			<input type="tel" id="telefoonnummer" />
+
+			<label for="email">E-mail</label>
+			<input type="email" id="email" required/>
+
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Studie:</legend>
+
+			<label for="studiejaar">Studiejaar</label>
+			<select id="studiejaar">
+			  	<option value="propedeuse">Propedeuse</option>
+			 	<option value="v1">V1</option>
+			 	<option value="v2">V2</option>
+			 	<option value="afstudeerfase">Afstudeerfase</option>
+			</select>
+
+			<label for="studierichting">Studierichting</label>
+			<select id="studierichting">
+			  	<option value="tdi">TDI</option>
+			 	<option value="cc">CC</option>
+			 	<option value="bo">BO</option>
+			 	<option value="nietvantoepassing">Niet van toepassing</option>
+			</select>
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Project:</legend>
+
+			<label for="projectnaam">Projectnaam</label>
+			<input type="text" id="projectnaam" />
+
+			<label for="projectpartner">Project partner</label>
+			<input type="text" id="projectpartner" />
+
+			<label for="projecturls">Project URLs</label>
+			<input type="url" id="projecturls" /> 
+
+			<label for="teamnaam">Teamnaam</label>
+			<input type="text" id="teamnaam" /> 
+
+			<label for="studenten">Studenten</label>
+			<input type="text" id="studenten" /> 
+
+			<label for="opdrachtomschrijving">Opdrachtomschrijving</label>
+			<textarea id="opdrachtomschrijving"></textarea>	
+
+			<label for="projectbeschrijving">Projectbeschrijving</label>
+			<textarea id="projectbeschrijving"></textarea>
+
+			<label for="doelgroepomschrijving">Doelgroepomschrijving</label>
+			<textarea id="doelgroepomschrijving"></textarea> 
+
+			<label for="doelstelling">Doelstelling</label>
+			<textarea id="doelstelling"></textarea>
+
+			<label for="tags">Tags</label>
+			<input type="text" id="tags" placeholder="tag1, tag2, tag3, ..." />
+
+
+		</fieldset>
+
+		<input type="submit" id="submit" value="Project Aanmelden" />
+
+	</form> 
+
+	<!-- Footer informatie -->
+	<footer>
+		<section>
+			<h1>Sitemap</h1>
+
+				<ul>
+					<li><a href="#">Projecten</a></li>
+						<ul>
+							<li><a href="#">Slideshow</a></li>
+							<li><a href="#">Aanmelden</a></li>
+							<li><a href="#">Zoeken</a></li>
+						</ul>
+
+					<li><a href="#">Opleidingsinformatie</a></li>
+						<ul>
+							<li><a href="#">Contact</a></li>
+							<li><a href="#">Visie &#38; Beleid</a></li>
+							<li><a href="#">Opbouw Studieprogramma</a></li>
+							<li><a href="#">Beroepen</a></li>
+								<ul>
+									<li><a href="#">Frontend developer</a></li>
+									<li><a href="#">Visual designer</a></li>
+									<li><a href="#">Interaction designer</a></li>
+									<li><a href="#">Content manager</a></li>
+									<li><a href="#">Project manager</a></li>
+								</ul>
+						</ul>
+				
+					<li><a href="#">Docenten</a></li>
+
+					<li><a href="#">Contact</a></li>
+				</ul>
+		</section>
+		
+		<section>			
+			<h1>Contact</h1>
+				<ul>	
+					<li>CMD Amsterdam</li>
+					<li>Bezoekadres: Rhijnspoorplein 1, 1091 GC Amsterdam</li>
+					<li>Postadres: Postbus 1025, 1000 BA Amsterdam</li>
+					<li>Telefoon: 020 595 1855</li>
+					<li>Email: <a href="#">info@cmd.hva.nl</a></li>
+					<li>RSS: <a href="#">Feed intranet</a></li>
+				</ul>
+								
+					<h1>Zoeken</h1>
+						<form>
+							<input type="text" id="inputsearch">
+							<input type="submit" value="zoeken" id="submitsearch">
+						</form>
+		</section>
+
+		<section>
+			<h1>About</h1>
+				<p>CMD Amsterdam is een ontwerp opleiding voor Interactieve Media.
+				Op de opleiding Communication &#38; Multimedia Design (CMD) Amsterdam leer je alles over het ontwerpen van online interactieve media. Dit betekent begrijpen, bedenken en maken van interactieve mediatoepassingen zoals websites, mobiele applicaties en interactieve televisie.</p>
+		</section>
+
+		<section>
+			<h1>Credits</h1>
+				<p>© 2007 Hogeschool van Amsterdam - DMCI - CMD Amsterdam</p>
+				<a href="#">Geef ons feedback</a>
+		</section>
+	</footer>
+
+</body>
+</html>
